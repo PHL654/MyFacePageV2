@@ -1,0 +1,130 @@
+* * {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ccc;
+    color: #333;
+    line-height: 1.6; /* Aumenta a altura da linha para melhor legibilidade */
+}
+
+header {
+    background-color: rgb(80, 80, 250); /* Cor mais escura para o cabeçalho */
+    color:black;
+    padding: 2px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Sombra suave para o cabeçalho */
+    
+    ;
+}
+
+
+
+
+.btn:hover {
+    background-color: gray; /* Cor do botão ao passar o mouse */
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5em;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+    margin: 10px 0;
+    font-size: 1.8em; /* Aumenta o tamanho do subtítulo */
+    font-weight: bolder;
+    cursor: default;
+}
+h3 {
+    border-bottom: 2px solid black; /* Mudando a cor para coincidir com o cabeçalho */
+    padding-bottom: 5px;
+    margin-bottom: 15px; /* Espaço abaixo do título */
+    color: black; /* Cor azul para os títulos das seções */
+    font-weight: bold; /* Negrito para os títulos das seções */
+    font-size: 1.5em; /* Tamanho de fonte aumentado para os títulos das seções */
+}
+
+
+em {
+    cursor: default;
+}
+
+.perfil {
+    width: 150px; /* Defina a largura desejada */
+    height: 150px; /* Defina a altura desejada */
+    border-radius: 50%; /* Faz a imagem ficar circular */
+    object-fit: cover; /* Para manter a proporção da imagem */
+    margin: 15px 0; /* Espaçamento acima e abaixo da imagem */
+    border: 3px solid #fff; /* Borda branca para destacar a imagem */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra suave na imagem */
+}
+
+section {
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 0.5s forwards;
+}
+
+section p {
+    color: black;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+section:hover {
+    transform: scale(1.03); /* Aumenta um pouco mais ao passar o mouse */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+ul, ol {
+    margin: 10px 0;
+    padding-left: 20px;
+}
+
+ul li, ol li {
+    transition: color 0.3s, transform 0.3s;
+    padding: 5px 0; /* Espaço entre os itens da lista */
+    color: rgb(63, 63, 63);
+}
+
+ul li:hover, ol li:hover {
+    color: black; /* Muda a cor ao passar o mouse */
+    transform: translateX(5px);
+    font-weight: bold; /* Negrito ao passar o mouse */
+    cursor: pointer; /* Mudança de cursor ao passar o mouse */
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background-color:rgb(80, 80, 250);
+    color: white;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave no rodapé */
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9em; /* Menor tamanho de fonte para o rodapé */
+    color: white;
+}
